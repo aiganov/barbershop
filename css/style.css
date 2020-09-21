@@ -1362,6 +1362,126 @@ img {
     width: 100%;
   }
 }
+/*** ПОСЛЕДНИЕ НОВОСТИ ***/
+.contacts {
+  padding-top: 130px;
+  padding-bottom: 70px;
+  background: url("../img/contacts-image-background.jpg") top center no-repeat;
+  background-size: auto;
+}
+.adress-map {
+  text-align: center;
+}
+.adress-text {
+  margin-bottom: 25px;
+  padding: 30px 55px;
+  color: #fff;
+  text-align: left;
+  background: #e1c18e;
+  border-radius: 50px;
+}
+.contacts-box {
+  position: relative;
+  z-index: 5;
+  padding-top: 110px;
+  padding-left: 105px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+  color: #fff;
+  outline: 3px solid #d5af72;
+}
+.contacts-box::after {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: -2;
+  content: '';
+  display: block;
+  width: 95%;
+  height: 95%;
+  background: #3f3e3e;
+}
+.contacts-box .title {
+  margin-bottom: 30px;
+}
+.adress {
+  margin-bottom: 25px;
+}
+.adress-title {
+  margin-bottom: 5px;
+  font-size: 15px;
+  line-height: 1;
+  color: #d5af72;
+}
+.adress-desc {
+  margin-bottom: 0;
+  font-size: 15px;
+  line-height: 1;
+}
+.phone-section {
+  display: flex;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 1200px) {
+  .phone-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contacts-phone {
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .adress-text {
+    padding: 15px 30px;
+  }
+  .contacts-box {
+    padding-top: 90px;
+    padding-left: 70px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+  }
+  .contacts-box::after {
+    top: 40px;
+    left: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .adress-map {
+    margin-bottom: 30px;
+  }
+  .adress-text {
+    display: inline-block;
+    padding: 12px 15px;
+    text-align: center;
+  }
+  .adress-pin {
+    display: block;
+    margin: 0 auto;
+  }
+  .contacts-phone .tel {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .contacts-box .btn {
+    margin: 0;
+  }
+  .contacts-box .social-icons {
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contacts-box {
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+  }
+  .contacts-box::after {
+    top: 10px;
+    left: 10px;
+  }
+}
 .header-main {
   color: #fff;
   background: url("../img/header-background.jpg") no-repeat;
@@ -2331,6 +2451,9 @@ input[type="search"]::placeholder {
   height: 33px;
   margin-right: 7px;
   border-radius: 50%;
+}
+.social:hover {
+  opacity: 0.8;
 }
 .social-vk {
   background: url("../img/icons/icon-social-vk.png");
