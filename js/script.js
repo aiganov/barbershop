@@ -188,3 +188,67 @@ $('.reviews-slider').slick({
     }, ]
 
 });
+
+/* Фильтр рубрик в Новостях */
+
+var removeRubrics = true;
+$(".filter-label-rubrics").click(function () {
+	$(".filter-label-rubrics").toggleClass('filter-label-toggle');
+    $(".filter-list-rubrics").toggleClass('filter-list-toggle');
+    removeRubrics = false;
+});
+
+$(".filter-list-rubrics").click(function() {
+    removeRubrics = false;
+});
+
+$("html").click(function () {
+    if (removeRubrics) {
+        $(".filter-list-rubrics").removeClass('filter-list-toggle');
+        $(".filter-label-rubrics").removeClass('filter-label-toggle');
+    }
+    removeRubrics = true;
+});
+
+/* Фильтр месяц в Новостях */
+
+var removeMonth = true;
+$(".filter-label-month").click(function () {
+	$(".filter-label-month").toggleClass('filter-label-toggle');
+    $(".filter-list-month").toggleClass('filter-list-toggle');
+    removeMonth = false;
+});
+
+$(".filter-list-month").click(function() {
+    removeMonth = false;
+});
+
+$("html").click(function () {
+    if (removeMonth) {
+        $(".filter-list-month").removeClass('filter-list-toggle');
+        $(".filter-label-month").removeClass('filter-label-toggle');
+    }
+    removeMonth = true;
+});
+
+
+/* Фильтр год в Новостях */
+
+var removeYear = true;
+$(".filter-label-year").click(function () {
+	$(".filter-label-year").toggleClass('filter-label-toggle');
+    $(".filter-list-year").toggleClass('filter-list-toggle');
+    removeYear = false;
+});
+
+$(".filter-list-year").click(function() {
+    removeYear = false;
+});
+
+$("html").click(function () {
+    if (removeYear) {
+        $(".filter-list-year").removeClass('filter-list-toggle');
+        $(".filter-label-year").removeClass('filter-label-toggle');
+    }
+    removeYear = true;
+});
