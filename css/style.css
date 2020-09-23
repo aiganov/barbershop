@@ -704,6 +704,7 @@ img {
 }
 .gallery-item {
   flex-shrink: 0;
+  max-width: 357px;
   margin-right: 15px;
 }
 .gallery-img-box {
@@ -753,6 +754,9 @@ img {
     height: auto;
     margin: 0 auto;
     margin-bottom: 20px;
+  }
+  .gallery-text {
+    padding: 0 40px;
   }
 }
 /*** АКЦИОННЫЕ ТОВАРЫ ***/
@@ -3020,4 +3024,138 @@ input[type="search"]::placeholder {
   .pagination-list {
     margin-bottom: 20px;
   }
+}
+.contact-form-box {
+  margin-top: 30px;
+  margin-bottom: 55px;
+}
+.contacts-box {
+  outline: none;
+}
+.contact-form-box .row {
+  position: relative;
+}
+.contact-form-box .row::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  width: 96%;
+  height: auto;
+  outline: 3px solid #d5af72;
+}
+.contact-form-question {
+  padding: 40px 0 25px 40px;
+  text-align: center;
+}
+.contact-form-question .title {
+  font-size: 36px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.contact-form-question .text {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+.contact-form-input {
+  width: 47%;
+  margin-right: 10px;
+  padding: 20px 30px 18px 30px;
+  font-size: 15px;
+  line-height: 1;
+  border-radius: 50px;
+  border: 1px solid #d5af72;
+}
+.contact-form-input:focus {
+  outline: none;
+}
+.form-textarea {
+  display: block;
+  width: 100%;
+  height: 100px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 20px 32px;
+  border-radius: 10px;
+  border: 1px solid #d5af72;
+}
+.form-textarea:focus {
+  outline: none;
+}
+.contact-form-agreement span {
+  border: 1px solid #d5af72;
+}
+.contact-form .btn {
+  padding: 19px 65px 17px 65px;
+}
+.contact-form-box .contacts-box {
+  padding-top: 80px;
+  padding-right: 60px;
+  padding-left: 90px;
+  z-index: auto;
+  height: 100%;
+}
+.contact-form-box .contacts-box::after {
+  top: 25px;
+  width: 90%;
+  height: 100%;
+}
+.contacts-mail {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.contacts-mail-title {
+  margin-bottom: 5px;
+  font-size: 15px;
+  line-height: 1;
+  color: #d5af72;
+}
+.contacts-mail-desc {
+  font-size: 15px;
+  line-height: 1;
+}
+@media screen and (max-width: 992px) {
+  .contact-form-input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact-form-box .row::before {
+    width: 100%;
+  }
+  .contact-form-question {
+    padding: 25px;
+  }
+  .contact-form-box .contacts-box::after {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contact-form-box .row::before {
+    outline: none;
+    border: 3px solid #d5af72;
+  }
+  .contact-form-question .title {
+    font-size: 32px;
+  }
+  .contact-form-question .text {
+    font-size: 16px;
+  }
+  .contact-form-box .contacts-box {
+    padding: 55px;
+  }
+}
+.contacts-gallery {
+  text-align: center;
+}
+.contacts-map {
+  padding-top: 240px;
+  padding-bottom: 340px;
+  background: url("../img/contacts-map-background.jpg") center no-repeat;
 }
