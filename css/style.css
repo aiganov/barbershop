@@ -3159,3 +3159,114 @@ input[type="search"]::placeholder {
   padding-bottom: 340px;
   background: url("../img/contacts-map-background.jpg") center no-repeat;
 }
+.reviews-white {
+  color: #000;
+  background: transparent;
+}
+.reviews-white .text {
+  color: #000;
+}
+.reviews-white .slick-list {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+.reviews-white .reviews-slide {
+  box-shadow: 0 0 59px rgba(0, 0, 0, 0.1);
+}
+.reviews-white .slick-dots li {
+  background: #302f2f;
+}
+.team {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.team-slider {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 60px;
+}
+.team-slider::before {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  content: '';
+  display: block;
+  width: 89%;
+  height: 302px;
+  margin: 0 auto;
+  border: 3px solid #d5af72;
+}
+.team-slider .slick-list {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-end !important;
+}
+.team-slider .slick-track {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-end !important;
+}
+.team-slider .slick-arrow {
+  top: 15px;
+  left: auto;
+  right: 80px;
+}
+.team-slider .slick-prev {
+  right: 160px;
+}
+.team-member {
+  flex-shrink: 0;
+  max-width: 262px;
+  margin-right: 20px;
+}
+.team-member-img-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+.team-member-img-box::after {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  content: '';
+  display: block;
+  width: 90%;
+  height: 90%;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+.team-member-img {
+  display: block;
+}
+.team-member-name {
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.team-member-post {
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #bf9e69;
+}
+@media screen and (max-width: 1200px) {
+  .team-member {
+    margin-right: 70px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .team-member {
+    margin-right: 60px;
+  }
+  .team-slider .slick-list {
+    padding-left: 55px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team-member {
+    margin-right: 200px;
+  }
+}
