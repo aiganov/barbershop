@@ -306,3 +306,18 @@ $("html").click(function () {
     }
     removeYear = true;
 });
+
+
+/** ГАЛЕРЕЯ **/
+
+$('.review-gallery-item').magnificPopup({
+  type: 'image',
+  gallery:{
+    enabled:true
+	}
+});
+
+$('.image-zoom').magnificPopup({
+  type: 'image'
+  // other options
+});
